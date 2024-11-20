@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public title: string = 'Mi primera app de Angular';
-  public counter: number = 1;
+
 
   /**
    * incrementarCantidad
@@ -30,7 +30,7 @@ export class AppComponent {
     this.counter = 1;
 
   }
-*/
+
 
   public actualizarCantidad(value: number){
     this.counter += value;
@@ -41,5 +41,5 @@ export class AppComponent {
 
   }
 
-
+*/
 }
