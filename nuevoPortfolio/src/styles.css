@@ -1,0 +1,40 @@
+
+/*proyectos*/
+
+.container {
+  padding: 40px; /* Espaciado interior */
+  border-radius: 8px; /* Bordes redondeados para el contenedor */
+  margin-bottom: 10px;
+}
+
+.card {
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fbe3fcc3; /* Fondo blanco para las tarjetas */
+  border: 1px solid #fbe3fcc3; /* Borde suave */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Elevar tarjeta al pasar el mouse */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Sombra más fuerte al pasar el mouse */
+}
+
+.card-img-top {
+  height: 200px; /* Altura fija para las imágenes */
+  object-fit: cover; /* Ajusta la imagen para cubrir el espacio */
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.card-text {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
