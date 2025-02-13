@@ -1,59 +1,69 @@
-# Superhero
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
+# Portfolio con Angular
 
-## Development server
+EEEE
 
-To start a local development server, run:
 
-```bash
-ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Authors
 
-## Code scaffolding
+- [@anfdez](https://www.github.com/anfdez)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-```bash
-ng generate component component-name
-```
+## Instalación de Angular
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Instalación de Angular CLI
 
-```bash
-ng generate --help
-```
+        npm install -g @angular/cli
 
-## Building
+Para verificar que se instaló correctamente, ejecuta:
 
-To build the project run:
+        ng version
+    
+## Creación del proyecto
 
-```bash
-ng build
-```
+Para crear el proyecto se ha utilizado el siguiente comando:
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+        ng new nuevPortfolio --standalone false
 
-## Running unit tests
+Para crear componentes tenemos dos opciónes, primero su versión normal, segundo su versión corta:
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+        ng generate component home
+        ng g c home
 
-```bash
-ng test
-```
+Esto generará una carpeta con los siguientes archivos dentro de src/app:
 
-## Running end-to-end tests
+        home.component.ts
+        home.component.html
+        home.component.css
+        home.component.spec.ts
 
-For end-to-end (e2e) testing, run:
+Para crear los componentes dentro de una carpeta específica:
 
-```bash
-ng e2e
-```
+        ng g c components/share/navbar
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Aquí hemos creado además una carpeta llamada "share", es decir, el navbar está presente en todas las páginas. 
 
-## Additional Resources
+Para comprobar que todo se ha realizado correctamente, desde la cmd introducimos el siguiente comando:
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+        ng serve
+        ng serve -o
+
+
+## Estructura del proyecto
+
+El proyecto contiene tres partes: 
+
+* home
+* about (contacto)
+* projects (proyectos)
+
+### Home
+
+Página principal en la cual podemos observar los siguientes aspectos: 
+-  Sobre mí
+-  Software Skills
+-  Idiomas
+-  Formación
+-  Experiencia laboral
+
