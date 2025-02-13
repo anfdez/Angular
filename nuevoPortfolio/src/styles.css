@@ -1,35 +1,41 @@
+body{
 
-/*proyectos*/
+  background-color: #666;
+}
+
+.navbar{
+  background-color: #f0bbb0 !important; /* Fondo para las tarjetas */
+}
 
 .container {
   padding: 40px; /* Espaciado interior */
-  border-radius: 8px; /* Bordes redondeados para el contenedor */
-  margin-bottom: 10px;
+
 }
 
 .card {
-  border-radius: 16px;
+  border-radius: 20px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: #fbe3fcc3; /* Fondo blanco para las tarjetas */
-  border: 1px solid #fbe3fcc3; /* Borde suave */
 }
 
 .card:hover {
-  transform: translateY(-10px); /* Elevar tarjeta al pasar el mouse */
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Sombra más fuerte al pasar el mouse */
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.card-img-top {
-  height: 200px; /* Altura fija para las imágenes */
-  object-fit: cover; /* Ajusta la imagen para cubrir el espacio */
+.img-card {
+  width: 100px;  /* Ancho fijo */
+  height: 100px; /* Altura fija */
+  object-fit: contain; /* Asegura que la imagen no se recorte */
+  display: block;
+  margin: 0 auto 10px; /* Centra la imagen y da margen inferior */
 }
 
 .card-title {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: bold;
   color: #333;
-  margin-bottom: 10px; /* Espaciado inferior */
+  margin-bottom: 8px;
 }
 
 .card-text {
@@ -38,16 +44,30 @@
   line-height: 1.5;
 }
 
-p {
-
-  position: absolute;
-  margin-bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  width: 100%;
-  color: #000000;
+.carousel-inner {
+  max-height: 400px; /* Mayor altura en pantallas grandes */
 }
+
+.carousel-img {
+  width: 100%;
+  height: auto; /* Ajusta la altura automáticamente */
+  max-height: 400px; /* Máxima altura en pantallas grandes */
+  object-fit: cover;
+}
+
+/* Estilos para dispositivos pequeños */
+@media (max-width: 768px) {
+  .carousel-inner {
+    max-height: 250px; /* Reduce la altura en móviles */
+  }
+
+  .carousel-img {
+    max-height: 250px;
+  }
+}
+
+
+
 
 
 
